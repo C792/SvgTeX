@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "fs": "^0.0.1-security",
     "katex": "^0.16.3"
   }
 }
