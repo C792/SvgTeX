@@ -10,7 +10,8 @@ function createWindow () {
     height: 255,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png'),
   })
 
   mainWindow.setMenuBarVisibility(false)
