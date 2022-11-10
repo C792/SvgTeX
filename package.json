@@ -17,9 +17,37 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^21.1.1"
+    "electron": "^21.1.1",
+    "electron-builder": "^23.6.0"
   },
   "dependencies": {
     "katex": "^0.16.3"
+  },
+  "build": {
+    "productName": "SvgTeX",
+    "appId": "com.tex.SvgTeX",
+    "asar": true,
+    "protocols": {
+      "name": "SvgTeX",
+      "schemes": [
+        "SvgTeX"
+      ]
+    },
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "./assets/icons/win/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "buildResources": "./",
+      "output": "./dist/",
+      "app": "."
+    }
   }
 }
