@@ -33,6 +33,15 @@ img#dark-icon {
   color: #ffffff;
 }
 
+.dark-mode span input, button {
+  background-color: #434343;
+  color: #ffffff;
+}
+
+button {
+  background-color: #f3f3f3;
+}
+
 input {
   font-family: 'Pretendard';
   color: #000000;
