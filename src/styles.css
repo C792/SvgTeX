@@ -1,8 +1,19 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  src: url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+  unicode-range: U+AC00-D7A3;
+}
+
+span.hangul_fallback {
+  font-family: 'Nanum Myeongjo';
+}
 body {
   margin: 0;
   padding: 0;
 }
+
 h1 {
   font-family: 'Consolas';
   position: relative;
