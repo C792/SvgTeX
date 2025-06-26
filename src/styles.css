@@ -6,6 +6,15 @@ body {
 h1 {
   font-family: 'Consolas';
   position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+}
+
+.h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -43,8 +52,8 @@ button {
 }
 
 input {
-  font-family: 'Pretendard';
-  color: #000000;
+  font-family: 'Consolas';
+  color: #000;
   position: absolute;
   outline: none;
   margin: 0px 5vw 10px 10vw;
