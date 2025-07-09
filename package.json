@@ -1,53 +1,13 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "name": "svgtex",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "start": "electron ."
+    "tauri": "tauri"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^21.1.1",
-    "electron-builder": "^23.6.0"
+    "@tauri-apps/cli": "^2"
   },
-  "dependencies": {
-    "katex": "^0.16.3"
-  },
-  "build": {
-    "productName": "SvgTeX",
-    "appId": "com.tex.SvgTeX",
-    "asar": true,
-    "protocols": {
-      "name": "SvgTeX",
-      "schemes": [
-        "SvgTeX"
-      ]
-    },
-    "win": {
-      "target": [
-        "zip",
-        "nsis"
-      ],
-      "icon": "./assets/icons/win/icon.ico"
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
-    },
-    "directories": {
-      "buildResources": "./",
-      "output": "./dist/",
-      "app": "."
-    }
-  }
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

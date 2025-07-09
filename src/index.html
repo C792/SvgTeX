@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script>
+      window.MathJax = {
+        loader: { load: ['input/tex', 'output/svg'] },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        svg: { fontCache: 'none' }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>
+    <title>SvgTeX</title>
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div class="h1">
+      <h1 id="result">
+        \[ x^2 + y^2 = 1 \]
+      </h1>
+    </div>
+    <div id="bottom">
+      <div id="colors" class="hide">
+        <input id='color' autocomplete="off" onkeyup='color()'/>
+        <input id='bgcolor' autocomplete="off" onkeyup='color()'/>
+      </div>
+      <input id='mathinput' autocomplete="off" onkeyup='out()'/>
+    </div>
+    <div class="hide">
+      <div id="svg"></div>
+    </div>
+  </body>
+</html>
